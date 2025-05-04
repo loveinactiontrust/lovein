@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love in Action</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JS and Popper.js (Popper is needed for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+    
+</head>
+
+<body>
+    <!-- Trigger button -->
+
+
+    <!--------- nav  -------->
+
+    <nav>
+        <div class="logo">
+      
+            <img src="images/logo.jpg" id="logoo" alt="">
+        </div>
+
+        <div class="rightnav">
+            <div class="title">
+                <a href="./index.html">Home</a>
+                <a href="./about.html" id="about">About Us</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+
+         
+        </div>
+    </nav>
+   
+    <div class="scanner">
+      <img src="images/scanner-11.jpg" alt="">
+      <b>Donate Here</b>
+    </div>
+
+<!-- boostrap -->
+
+<!-- Trigger Button -->
+
+  
+<div class="overall">
+  
+
+    <!-- bootstrap  -->
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Payment</h5>
+              <button type="button" class="close ps-1 pe-1" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <label for="donationAmount">Enter the amount you wish to donate (INR):</label>
+                <input type="number" id="donationAmount" min="1" placeholder="Enter amount" required />
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="donateBtn" class="btn btn-primary">Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+      
+
+
+
+    <!---------- Slider ---------->
+
+    <div class="slider">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/front-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/front-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/front-3.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/front-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/front-5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+
+    </div>
+
+    <!--------- Summary  ---------->
+
+
+    <div class="content">
+        <section>
+            <h2>Together, We can make a difference..</h2>
+            <p>Love in Action is a home for underprivileged girls. We do not run on any consistent donation sources,
+                domestic or international, but have always depended on donations from people who have chosen to give
+                generously - in cash or kind. Currently, we are home to 10 girls
+                We have 2 financial areas requiring help. Our budget works out to be as follows:
+
+                Monthly budget –
+
+                Annual education budget
+
+                We can share on request .
+
+                To help fund our monetary goals, kindly consider partnering with us in any of the above categories.
+
+                - One time donor - any amount, any time All cash donations are exempt from IT under 80G.
+            </p>
+        </section>
+        <aside>
+            <img src="./images/front-3.jpeg" alt="">
+        </aside>
+
+    </div>
+
+    <footer>
+        <div class="quicklink">
+     
+
+
+            <h2>QuickLink</h2>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="details">
+            <h2>Contact Us</h2>
+            <li><i class="fa-solid fa-phone"></i> <span>+919741123550 </span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span> Loveactiontrust@gmail.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i>
+                <span># 388, 3rd Cross, Park Avenue Layout, <br>
+                    Babusapalya (Near St. Vincent Polloti School), <br>
+                    Banaswadi, Bangalore-560043.</span>
+            </li>
+        </div>
+
+    </footer>
+    <div class="copyright">
+        <a><i class="fa-solid fa-copyright"></i> <span> Copyright Love in Action.All Rights Reserved</span></a>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

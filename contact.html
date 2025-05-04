@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script defer src="data.js"></script>
+
+     
+<!-- Bootstrap JS and Popper.js (Popper is needed for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" id="logoo" alt="">
+        </div>
+
+        <div class="rightnav">
+            <div class="title">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+          
+        </div>
+    </nav>
+
+    <div class="scanner">
+      <img src="./images/scanner-11.jpg" alt="">
+      <b>Donate Here</b>
+    </div>
+
+    <div class="overall">
+
+        
+         <!-- bootstrap  -->
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Payment</h5>
+              <button type="button" class="close ps-1 pe-1" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <label for="donationAmount">Enter the amount you wish to donate (INR):</label>
+                <input type="number" id="donationAmount" min="1" placeholder="Enter amount" required />
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="donateBtn" class="btn btn-primary">Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+      
+
+        <div class="contact">
+            <form method="post"
+                action="" name="contact-form" >
+                <h1>Contact Us</h1>
+                <label for="name">Name</label> <br>
+                <input type="text" name="Name" placeholder=" Enter your name" required> <br>
+                <label for="number">Phone</label> <br>
+                <input type="text" name="Phone" placeholder=" Phone number" required> <br>
+                <label for="email">Email</label> <br>
+                <input type="email" name="Email" placeholder=" Enter your email" required> <br>
+
+                <label for="Message">Message</label>
+                <textarea  name="Message" placeholder=" "></textarea>
+                <div class="button">
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div id="rendering" style="display: none;">Please wait</div>
+
+            </form>
+
+            <div class="Address">
+                <h1> Address</h1>
+                <li><i class="fa-solid fa-phone"></i> <span> +919741123550 </span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span  > Loveactiontrust@gmail.com</span></li>
+                <li><i class="fa-solid fa-location-dot"></i>
+                    <span># 388, 3rd Cross, Park Avenue Layout, 
+                        Babusapalya (Near St. Vincent Polloti School), 
+                        Banaswadi, Bangalore-560043.</span>
+                </li>
+            </div>
+  
+        </div>
+
+       <div class="scannerimg">
+        <img src="./images/scanner.jpg" alt="">
+       </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0472550370223!2d77.64882637447552!3d13.032662787288306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17348fe7416b%3A0x1a6c4867314e02db!2sSt.Vincent%20Pallotti%20School!5e0!3m2!1sen!2sin!4v1746035833645!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+   
+
+    <footer>
+        <div class="quicklink">
+            <h2>QuickLink</h2>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="details">
+            <h2>Contact Us</h2>
+            <li><i class="fa-solid fa-phone"></i> <span> +919741123550 </span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span> Loveactiontrust@gmail.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i>
+                <span># 388, 3rd Cross, Park Avenue Layout, <br>
+                    Babusapalya (Near St. Vincent Polloti School), <br>
+                    Banaswadi, Bangalore-560043.</span>
+            </li>
+        </div>
+    </footer>
+    <div class="copyright">
+        <a><i class="fa-solid fa-copyright"></i> <span> Copyright Love in Action.All Rights Reserved</span></a>
+    </div>
+</div>
+
+
+
+<!-- //Razorpay -->
+
+
+
+</body>
+
+</html>

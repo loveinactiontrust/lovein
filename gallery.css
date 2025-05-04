@@ -1,0 +1,292 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    width: 100%;
+    height: 130px;
+    background-image: linear-gradient(to right,#008000,#00ff00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    border-bottom: 3px solid black;
+    
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    /* height: 150px; */
+    width: 300px;
+    height: 130px;
+   
+   
+
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 2px solid black;
+}
+nav .title{
+    display: flex;
+    gap: 70px;
+    padding-top: 30px;
+        position: relative;
+        right: 5%;
+}
+
+
+.title a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    
+}
+
+.modal-header .close{
+    background-color: red;
+ }
+.rightnav{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    font-weight: 700;   
+    position: relative;
+    bottom: 12%;
+
+}
+
+.scanner{
+    position: relative;
+    right: 5%;
+    top: 75%;
+    position: fixed;
+    z-index: 1;
+    background-color: lightseagreen;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    
+}
+
+.scanner img{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+} 
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+
+  .overall{
+   position: relative;
+   top: 100px;
+  
+    min-height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    padding: 10px;
+   
+}
+
+.box{
+    
+    flex-grow: 1;
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    padding: 5px;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0.5;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+
+footer{
+    min-height: 300px;
+    width: 100%;
+    margin-top: 10px;
+     
+    background-image: linear-gradient(to right, #027a08,#6df2c8);
+  
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.quicklink{
+    display: flex;
+    flex-direction: column;
+    
+}
+.quicklink a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 5px 5px;
+}
+
+       /* Details   */
+       
+.details li{
+    list-style-type: none;
+    padding: 5px;
+}
+.details li i{
+    font-size: 25px;
+}
+.details li span{
+    margin: 20px;
+}
+.copyright{
+    min-height: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right, #027a08,#6df2c8);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width:670px) and (max-width:930px) {
+    .overall{
+      
+        padding: 10px;
+    }
+    nav .title {
+        gap: 20px;
+        right: 5%;
+     }
+     .title a{
+         font-size: 14px;
+     }
+     nav{
+         padding-right: unset;
+     }
+     .logo{
+         width: 280px;
+     }
+
+    }
+    @keyframes appear {
+        from{
+            opacity: 0.7;
+            scale: 0.7;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    @media only screen and (min-width:500px) and (max-width:670px) {
+   
+        nav .title {
+            gap: 10px;
+            right: 5%;
+         }
+         .title a{
+             font-size: 14px;
+         }
+         nav{
+             padding-right: unset;
+             height: 100px;
+         }
+         .overall{
+            position: relative;
+            top: 80px;
+        }
+         .logo{
+             width: 200px;
+             height: 100px;
+         }
+        
+    
+       
+    }
+
+    @media only screen and (min-width:300px) and (max-width:500px) {
+   
+    
+        nav .title {
+            gap: 10px;
+            right: 5%;
+           
+         }
+         .title a{
+             font-size: 10px;
+         }
+         nav{
+             height: 80px;
+             padding-right: unset;
+             
+         }
+         .overall{
+            position: relative;
+            top: 80px;
+        }
+         .logo{
+             width: 120px;
+             height: 80px;
+         }
+     
+     
+    
+        footer{
+            flex-direction: column;
+            align-items: start;
+            padding: 20px 5px;
+            gap: 20px;
+        }
+        .details li i {
+            font-size: 15px;
+        }
+    
+        .copyright a i{
+            font-size: 15px;
+        }
+        .scanner {
+            height: 100px;
+            width: 100px;
+        }
+    }
+    
+
+
