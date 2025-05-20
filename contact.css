@@ -202,7 +202,10 @@ textarea{
     margin: 20px;
     font-size: 25px;
 }
-
+.Address li a{
+    text-decoration: none;
+    color: #008000;
+}
 .map{
     padding-top: 10px;
     width: 60%;
