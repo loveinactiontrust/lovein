@@ -179,6 +179,10 @@
 .details li span{
     margin: 20px;
 }
+.details li a{
+     text-decoration: none;
+     color:#ffffff;
+}
 .copyright{
     min-height: 30px;
     
