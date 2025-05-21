@@ -130,6 +130,7 @@ nav .title{
     align-items: center;
     gap: 20px;
     color: green;
+    margin:20px;
 }
 
 form{
