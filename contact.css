@@ -190,10 +190,12 @@ textarea{
 }
 .Address{
     width: 45%;
+    
 }
 .Address li{
     list-style-type: none;
     padding: 20px 10px ;
+    
 }
 .Address li i{
     font-size: 30px;
@@ -204,8 +206,9 @@ textarea{
 }
 .Address li a{
     text-decoration: none;
-    color: #008000;
+    color: #008000;
 }
+
 .map{
     padding-top: 10px;
     width: 60%;
@@ -252,9 +255,9 @@ footer{
 .details li span{
     margin: 20px;
 }
-.details li a{
-     text-decoration: none;
-     color:#ffffff;
+.details a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .copyright{
     min-height: 30px;
